@@ -7,10 +7,11 @@ services:
             dockerfile: Dockerfile
         # hmmm...
         volumes:
-            - "./geo_app/notebooks/:/notebooks/"
+            - "./geo_app/notebooks/:/geo_app/notebooks/"
         # Map port from container to host
         ports:
             - "8888:8888"
         # We can interact with container
         tty: True
-        command: /bin/bash
+        # entrypoint:
+        #     - /notebooks/run.sh
