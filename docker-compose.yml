@@ -1,0 +1,16 @@
+version: '2'
+services:
+    geo_app:
+        # Where to find a dockerfile
+        build:
+            context: ./geo_app
+            dockerfile: Dockerfile
+        # hmmm...
+        volumes:
+            - "./geo_app/notebooks/:/notebooks/"
+        # Map port from container to host
+        ports:
+            - "8888:8888"
+        # We can interact with container
+        tty: True
+        command: /bin/bash
