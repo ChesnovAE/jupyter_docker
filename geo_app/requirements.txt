@@ -1,0 +1,6 @@
+seaborn
+matplotlib
+geopandas
+rasterio
+earthpy
+jupyter
