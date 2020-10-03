@@ -13,5 +13,3 @@ services:
             - "8888:8888"
         # We can interact with container
         tty: True
-        # entrypoint:
-        #     - /notebooks/run.sh

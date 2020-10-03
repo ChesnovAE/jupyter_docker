@@ -1,14 +1,14 @@
 FROM ubuntu:xenial-20180417
 
-RUN apt-get update
-RUN apt-get -y install python3-pip
-RUN apt-get -y install htop
-RUN apt-get -y install tmux
+RUN apt-get update \ 
+    && apt-get -y install python3-pip \
+    && apt-get -y install htop \
+    && apt-get -y install tmux
 
 RUN mkdir -p /geo_app/notebooks
 
-RUN pip3 install --upgrade pip
-RUN pip3 install --upgrade setuptools
+RUN pip3 install --upgrade pip \
+    && pip3 install --upgrade setuptools
 
 WORKDIR /geo_app
 
