@@ -36,7 +36,7 @@ git clone https://github.com/ChesnovAE/jupyter_docker.git && cd jupyter_docker
         cd geo_app && jupyter notebook --generate-config
         ```
 
-    - Run python3 and type following, then enter your password and copy hashed password from output
+    - Run python3 interpreter and type following, then enter your password and copy hashed password from output
 
         ```
         from notebook.auth import passwd; passwd()
@@ -103,3 +103,6 @@ git clone https://github.com/ChesnovAE/jupyter_docker.git && cd jupyter_docker
         ```
         jupyter notebook list
         ```
+## Notes
+
+If you want start public jupyter server, read about security **[here](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#notebook-server-security)** 
